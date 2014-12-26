@@ -1,0 +1,130 @@
+\hypertarget{ledseven_8c}{\section{ledseven.\+c File Reference}
+\label{ledseven_8c}\index{ledseven.\+c@{ledseven.\+c}}
+}
+
+
+The main sources for the library.  
+
+
+{\ttfamily \#include \char`\"{}ledseven.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}{print\+Hex} (uint i)
+\item 
+void \hyperlink{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}{print\+Dec} (uint i)
+\item 
+void \hyperlink{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}{print\+Period} ()
+\item 
+void \hyperlink{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clear\+Screen} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main sources for the library. 
+
+This file contains the source for the functions to write to the seven-\/segment L\+E\+D.
+
+\begin{DoxyAuthor}{Author}
+Ethan Ruffing \href{mailto:ruffinge@gmail.com}{\tt ruffinge@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+0.\+1.\+0 
+\end{DoxyVersion}
+
+
+Definition in file \hyperlink{ledseven_8c_source}{ledseven.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{\index{ledseven.\+c@{ledseven.\+c}!clear\+Screen@{clear\+Screen}}
+\index{clear\+Screen@{clear\+Screen}!ledseven.\+c@{ledseven.\+c}}
+\subsubsection[{clear\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}
+The {\ttfamily clear\+Screen} function is designed to clear a seven-\/segment L\+E\+D so that it can be written to again.
+
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+
+
+Definition at line 153 of file ledseven.\+c.
+
+\hypertarget{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}{\index{ledseven.\+c@{ledseven.\+c}!print\+Dec@{print\+Dec}}
+\index{print\+Dec@{print\+Dec}!ledseven.\+c@{ledseven.\+c}}
+\subsubsection[{print\+Dec}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Dec (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+)}}\label{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}
+The {\ttfamily print\+Dec} function is designed to print a decimal digit to a seven-\/segment L\+E\+D.
+
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+0.\+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & The digit to display (must be between 0 and 9, inclusive) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file ledseven.\+c.
+
+
+
+Referenced by print\+Hex().
+
+\hypertarget{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}{\index{ledseven.\+c@{ledseven.\+c}!print\+Hex@{print\+Hex}}
+\index{print\+Hex@{print\+Hex}!ledseven.\+c@{ledseven.\+c}}
+\subsubsection[{print\+Hex}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex (
+\begin{DoxyParamCaption}
+\item[{uint}]{i}
+\end{DoxyParamCaption}
+)}}\label{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}
+The {\ttfamily print\+Hex} function is designed to print a hexadecimal digit to a seven-\/segment L\+E\+D.
+
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+0.\+1.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & The digit to display (Must be between 0x0 and 0x\+F, inclusive) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file ledseven.\+c.
+
+\hypertarget{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}{\index{ledseven.\+c@{ledseven.\+c}!print\+Period@{print\+Period}}
+\index{print\+Period@{print\+Period}!ledseven.\+c@{ledseven.\+c}}
+\subsubsection[{print\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}
+The {\ttfamily  print\+Period} function will display a period on the seven-\/ segment L\+E\+D.
+
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+0.\+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 148 of file ledseven.\+c.
+
