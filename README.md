@@ -3,32 +3,32 @@
 
 Copyright 2014 by Ethan Ruffing
 
-This is a library designed for using a seven-segment LED with an Arduino UNO.
+This is a library designed for using a seven-segment LED with an Arduino
+UNO.
 
-This library is designed for use with a seven-segment LED display, set up
-according to a "common ground" scheme which follows the following pin diagram
-(note that pin `dp` represents pin for the dot/period):
+This library is designed for use with a seven-segment LED display, set
+up according to a "common ground" scheme which follows the following pin
+diagram (note that pin `dp` represents pin for the dot/period):
 
-	 - a -
-	|     |
-	f     g
-	|     |
-	 - g -
-	|     |
-	e     f    __
-	|     |   |dp|
-	 - d -     --
+     - a -
+    |     |
+    f     g
+    |     |
+     - g -
+    |     |
+    e     f    __
+    |     |   |dp|
+     - d -     --
 
-These LED display pins are then expected to be connected to an Arduino UNO's
-digital pins according to the following table:
+These LED display pins are then mapped to the Arduino's digital pins
+using the `pinOut` struct.
 
-| LED Pin | Arduino Pin |
-|:-------:|:-----------:|
-|    A    |      2      |
-|    B    |      3      |
-|    C    |      4      |
-|    D    |      6      |
-|    E    |      7      |
-|    F    |      8      |
-|    G    |      9      |
-|    DP   |      5      |
+To get started using the library, create a `PinOut` variable and define
+each of its members according to the documentation for the `pinOut`
+struct. Then, simply call the function for the type of output you wish
+to display, and pass the value to be displayed along with a pointer to
+your pin mapping variable.
+
+Note that, on each call to print a new value to the display, the old
+value will not be automatically cleared. Instead, to clear it, you must
+call `clearScreen(const PinOut *pinMap)`.
