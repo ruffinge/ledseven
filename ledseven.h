@@ -18,6 +18,20 @@
 #include <Arduino.h>
 
 /**
+ * @typedef struct pinOut PinOut
+ *
+ * @brief A typedef for the mapping of pins between the Arduino and seven-
+ * segment LED display.
+ *
+ * @details
+ * This type is to be used when creating the mapping between the pins of the
+ * Arduino and those of the seven-segment LED display. For details on creating
+ * the mapping, see the documentation for pinOut.
+ *
+ * @since 2014-12-26
+ * @version 0.1.0
+ */
+/**
  * @struct pinOut
  *
  * @brief A mapping of Arduino pins to seven-segment LED display pins
@@ -34,7 +48,7 @@
  * @since 2014-12-26
  * @version 0.1.0
  */
-struct pinOut {
+typedef struct pinOut {
     /** The Arduino digital pin corresponding to the LED display's pin A */
     int ledPinA;
 
@@ -58,23 +72,7 @@ struct pinOut {
 
     /** The Arduino digital pin corresponding to the LED display's pin DP */
     int ledPinDP;
-}
-
-/**
- * @typedef struct pinOut PinOut
- *
- * @brief A typedef for the mapping of pins between the Arduino and seven-
- * segment LED display.
- *
- * @details
- * This type is to be used when creating the mapping between the pins of the
- * Arduino and those of the seven-segment LED display. For details on creating
- * the mapping, see the documentation for pinOut.
- *
- * @since 2014-12-26
- * @version 0.1.0
- */
-typedef struct pinOut PinOut;
+} PinOut;
 
 /**
  * The <code>printHex</code> function is designed to print a hexadecimal digit
