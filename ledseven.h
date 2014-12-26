@@ -15,6 +15,7 @@
 #ifndef LEDseven_h
 #define LEDseven_h
 
+#include <stdlib.h>
 #include <Arduino.h>
 
 /**
@@ -87,7 +88,7 @@ typedef struct pinOut {
  *     A pointer to the PinOut that maps the relationship between the pins of
  *     the Arduino and those of the seven-segment LED display being used
  */
-void printHex(uint i, const PinOut *pinMap);
+void printHex(unsigned int i, const PinOut *pinMap);
 
 /**
  * The <code>printDec</code> function is designed to print a decimal digit to a
@@ -102,7 +103,7 @@ void printHex(uint i, const PinOut *pinMap);
  *     A pointer to the PinOut that maps the relationship between the pins of
  *     the Arduino and those of the seven-segment LED display being used
  */
-void printDec(uint i, const PinOut *pinMap);
+void printDec(unsigned int i, const PinOut *pinMap);
 
 /**
  * The <code> printPeriod</code> function will display a period on the seven-
