@@ -152,12 +152,12 @@ void printPeriod()
 
 void clearScreen()
 {
-	digitalWrite(LED_PIN_A, LOW);
-	digitalWrite(LED_PIN_B, LOW);
-	digitalWrite(LED_PIN_C, LOW);
-	digitalWrite(LED_PIN_D, LOW);
-	digitalWrite(LED_PIN_DP, LOW);
-	digitalWrite(LED_PIN_E, LOW);
-	digitalWrite(LED_PIN_F, LOW);
-	digitalWrite(LED_PIN_G, LOW);
+	digitalWrite(pinMap.ledPinA, LOW);
+	digitalWrite(pinMap.ledPinB, LOW);
+	digitalWrite(pinMap.ledPinC, LOW);
+	digitalWrite(pinMap.ledPinD, LOW);
+	digitalWrite(pinMap.ledPinDP, LOW);
+	digitalWrite(pinMap.ledPinE, LOW);
+	digitalWrite(pinMap.ledPinF, LOW);
+	digitalWrite(pinMap.ledPinG, LOW);
 }

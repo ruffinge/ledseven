@@ -131,7 +131,12 @@ void printPeriod(const PinOut *pinMap);
  * LED so that it can be written to again.
  *
  * @since 2014-12-25
+ * @version 0.1.0
+ * 
+ * @param[in] pinMap
+ *     A pointer to the PinOut that maps the relationship between the pins of
+ *     the Arduino and those of the seven-segment LED display being used
  */
-void clearScreen();
+void clearScreen(const PinOut *pinMap);
 
 #endif // LEDseven_h
