@@ -73,74 +73,74 @@ void printDec(uint i)
 {
 	switch (i) {
 	case 0:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
-		digitalWrite(LED_PIN_E, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
+		digitalWrite(pinMap.ledPinE, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
 		break;
 	case 1:
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
 		break;
 	case 2:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
-		digitalWrite(LED_PIN_E, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
+		digitalWrite(pinMap.ledPinE, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
 		break;
 	case 3:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
-		digitalWrite(LED_PIN_E, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
+		digitalWrite(pinMap.ledPinE, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
 		break;
 	case 4:
-		digitalWrite(LED_PIN_F, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
 		break;
 	case 5:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
 		break;
 	case 6:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
-		digitalWrite(LED_PIN_E, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
+		digitalWrite(pinMap.ledPinE, HIGH);
 		break;
 	case 7:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HGIH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HGIH);
 		break;
 	case 8:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
-		digitalWrite(LED_PIN_D, HIGH);
-		digitalWrite(LED_PIN_E, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
-		digitalWrite(LED_PIN_G, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
+		digitalWrite(pinMap.ledPinD, HIGH);
+		digitalWrite(pinMap.ledPinE, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
 		break;
 	case 9:
-		digitalWrite(LED_PIN_A, HIGH);
-		digitalWrite(LED_PIN_B, HIGH);
-		digitalWrite(LED_PIN_C, HIGH);
-		digitalWrite(LED_PIN_F, HIGH);
+		digitalWrite(pinMap.ledPinA, HIGH);
+		digitalWrite(pinMap.ledPinB, HIGH);
+		digitalWrite(pinMap.ledPinC, HIGH);
+		digitalWrite(pinMap.ledPinF, HIGH);
 		break;
 	default:
-		digitalWrite(LED_PIN_G, HIGH);
+		digitalWrite(pinMap.ledPinG, HIGH);
 		break;
 	}
 }

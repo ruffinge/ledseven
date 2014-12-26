@@ -107,8 +107,11 @@ void printHex(uint i, const PinOut *pinMap);
  *
  * @param[in] i
  *     The digit to display (must be between 0 and 9, inclusive)
+ * @param[in] pinMap
+ *     A pointer to the PinOut that maps the relationship between the pins of
+ *     the Arduino and those of the seven-segment LED display being used
  */
-void printDec(uint i);
+void printDec(uint i, const PinOut *pinMap);
 
 /**
  * The <code> printPeriod</code> function will display a period on the seven-
