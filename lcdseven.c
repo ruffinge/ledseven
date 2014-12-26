@@ -27,3 +27,8 @@ void printDec(int i)
 		default:
 	}
 }
+
+void clearScreen()
+{
+	
+}

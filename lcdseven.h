@@ -34,4 +34,12 @@ void printHex(int i);
  */
 void printDec(int i);
 
+/**
+ * The <code>clearScreen</code> function is designed to clear a seven-segment
+ * LED so that it can be written to again.
+ *
+ * @since 2014-12-25
+ */
+void clearScreen();
+
 #endif // LEDseven_h
