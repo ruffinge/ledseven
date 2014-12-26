@@ -10,6 +10,8 @@
  * @author Ethan Ruffing <ruffinge@gmail.com>
  * @since 2014-12-25
  * @version 0.1.0
+ *
+ * @todo Convert to C++ and make the library object-oriented
  */
 
 #ifndef LEDseven_h
