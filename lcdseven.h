@@ -35,6 +35,14 @@ void printHex(int i);
 void printDec(int i);
 
 /**
+ * The <code> printPeriod</code> function will display a period on the seven-
+ * segment LED.
+ *
+ * @since 2014-12-25
+ */
+void printPeriod();
+
+/**
  * The <code>clearScreen</code> function is designed to clear a seven-segment
  * LED so that it can be written to again.
  *

@@ -29,6 +29,11 @@ void printDec(int i)
 	}
 }
 
+void printPeriod()
+{
+	digitalWrite(LED_PIN_DP, HIGH);
+}
+
 void clearScreen()
 {
 	digitalWrite(LED_PIN_A, LOW);
