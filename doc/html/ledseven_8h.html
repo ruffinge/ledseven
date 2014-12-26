@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ledseven.h File Reference</div>  </div>
@@ -89,154 +91,206 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>The header file for the library.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;Arduino.h&gt;</code><br />
 </div>
 <p><a href="ledseven_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a90a16f6e496332e3d7ac30a1b02d026b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90a16f6e496332e3d7ac30a1b02d026b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_A</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a90a16f6e496332e3d7ac30a1b02d026b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b494dd16417a9739836626cc51788d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55b494dd16417a9739836626cc51788d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_B</b>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a55b494dd16417a9739836626cc51788d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad161dddc6429c81e9cce6d80bb2f1939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad161dddc6429c81e9cce6d80bb2f1939"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_C</b>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ad161dddc6429c81e9cce6d80bb2f1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4704507c0f64ee4324395e1973cb11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4704507c0f64ee4324395e1973cb11"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_DP</b>&#160;&#160;&#160;5</td></tr>
-<tr class="separator:a0a4704507c0f64ee4324395e1973cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c58bafc29b22b305831132b3203df3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c58bafc29b22b305831132b3203df3e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_D</b>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a4c58bafc29b22b305831132b3203df3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0697788999c6aebd7dc590222f9f0463"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0697788999c6aebd7dc590222f9f0463"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_E</b>&#160;&#160;&#160;7</td></tr>
-<tr class="separator:a0697788999c6aebd7dc590222f9f0463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49b63b5f0b7d16ff47bca2ddebeb87bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49b63b5f0b7d16ff47bca2ddebeb87bb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_F</b>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:a49b63b5f0b7d16ff47bca2ddebeb87bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ef63d5777a0068ab7664ce50d5de37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87ef63d5777a0068ab7664ce50d5de37"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PIN_G</b>&#160;&#160;&#160;9</td></tr>
-<tr class="separator:a87ef63d5777a0068ab7664ce50d5de37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpin_out.html">pinOut</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping of Arduino pins to seven-segment LED display pins.  <a href="structpin_out.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a520291f463d8e59dcf1aebf78782d263"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structpin_out.html">pinOut</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a></td></tr>
+<tr class="memdesc:a520291f463d8e59dcf1aebf78782d263"><td class="mdescLeft">&#160;</td><td class="mdescRight">A typedef for the mapping of pins between the Arduino and seven- segment LED display.  <a href="#a520291f463d8e59dcf1aebf78782d263">More...</a><br /></td></tr>
+<tr class="separator:a520291f463d8e59dcf1aebf78782d263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af6a7d641c0d0230c02891695b79b0793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#af6a7d641c0d0230c02891695b79b0793">printHex</a> (uint i)</td></tr>
-<tr class="separator:af6a7d641c0d0230c02891695b79b0793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e91ffda97a3a0e4a44d32562df5e7c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a9e91ffda97a3a0e4a44d32562df5e7c3">printDec</a> (uint i)</td></tr>
-<tr class="separator:a9e91ffda97a3a0e4a44d32562df5e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca3b7b054ccc8babce289b2e56f38fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a7ca3b7b054ccc8babce289b2e56f38fc">printPeriod</a> ()</td></tr>
-<tr class="separator:a7ca3b7b054ccc8babce289b2e56f38fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d7e8af417b6d543da691e9c0e2f6f9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a9d7e8af417b6d543da691e9c0e2f6f9f">clearScreen</a> ()</td></tr>
-<tr class="separator:a9d7e8af417b6d543da691e9c0e2f6f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45583e6d929fa21b9811f64dd6e84a7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a45583e6d929fa21b9811f64dd6e84a7a">printHex</a> (unsigned int i, const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *pinMap)</td></tr>
+<tr class="memdesc:a45583e6d929fa21b9811f64dd6e84a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a hexadecimal digit to the display.  <a href="#a45583e6d929fa21b9811f64dd6e84a7a">More...</a><br /></td></tr>
+<tr class="separator:a45583e6d929fa21b9811f64dd6e84a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f744b2deedb958050b0f025bd1df14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#ad1f744b2deedb958050b0f025bd1df14">printDec</a> (unsigned int i, const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *pinMap)</td></tr>
+<tr class="memdesc:ad1f744b2deedb958050b0f025bd1df14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a decimal digit to the display.  <a href="#ad1f744b2deedb958050b0f025bd1df14">More...</a><br /></td></tr>
+<tr class="separator:ad1f744b2deedb958050b0f025bd1df14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ac6a7c432bf0eca834d4bd9f456e37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#a00ac6a7c432bf0eca834d4bd9f456e37">printPeriod</a> (const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *pinMap)</td></tr>
+<tr class="separator:a00ac6a7c432bf0eca834d4bd9f456e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6d5e49ec90a2d549034ecfe19e719f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ledseven_8h.html#abe6d5e49ec90a2d549034ecfe19e719f">clearScreen</a> (const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *pinMap)</td></tr>
+<tr class="separator:abe6d5e49ec90a2d549034ecfe19e719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The header file for the library. </p>
 <p>The <code><a class="el" href="ledseven_8h.html" title="The header file for the library. ">ledseven.h</a></code> file is the primary header file for this library. It contains all necessary declarations, preprocessor statements, and related code.</p>
-<dl class="section version"><dt>Version</dt><dd>0.1.0 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Ethan Ruffing <a href="#" onclick="location.href='mai'+'lto:'+'ruf'+'fi'+'nge'+'@g'+'mai'+'l.'+'com'; return false;">ruffi<span style="display: none;">.nosp@m.</span>nge@<span style="display: none;">.nosp@m.</span>gmail<span style="display: none;">.nosp@m.</span>.com</a> </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2014-12-25 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Convert to C++ and make the library object-oriented </dd></dl>
 
 <p>Definition in file <a class="el" href="ledseven_8h_source.html">ledseven.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a9d7e8af417b6d543da691e9c0e2f6f9f"></a>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a520291f463d8e59dcf1aebf78782d263"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structpin_out.html">pinOut</a> <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A typedef for the mapping of pins between the Arduino and seven- segment LED display. </p>
+<p>This type is to be used when creating the mapping between the pins of the Arduino and those of the seven-segment LED display. For details on creating the mapping, see the documentation for <a class="el" href="structpin_out.html" title="A mapping of Arduino pins to seven-segment LED display pins. ">pinOut</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>2014-12-26 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="abe6d5e49ec90a2d549034ecfe19e719f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void clearScreen </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *&#160;</td>
+          <td class="paramname"><em>pinMap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The <code>clearScreen</code> function is designed to clear a seven-segment LED so that it can be written to again.</p>
+<p>The <code>clearScreen</code> function is designed to clear a seven-segment LED display so that it can be written to again.</p>
 <dl class="section since"><dt>Since</dt><dd>2014-12-25 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMap</td><td>A pointer to the PinOut that maps the relationship between the pins of the Arduino and those of the seven-segment LED display being used </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00153">153</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
+<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00178">178</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9e91ffda97a3a0e4a44d32562df5e7c3"></a>
+<a class="anchor" id="ad1f744b2deedb958050b0f025bd1df14"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void printDec </td>
           <td>(</td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *&#160;</td>
+          <td class="paramname"><em>pinMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The <code>printDec</code> function is designed to print a decimal digit to a seven-segment LED.</p>
+
+<p>Prints a decimal digit to the display. </p>
+<p>The <code>printDec</code> function is designed to print a decimal digit to a seven-segment LED display.</p>
+<p>Note that, if the value passed as the digit to display does not match an accepted value, a dash (<code>-</code>) will be displayed instead.</p>
 <dl class="section since"><dt>Since</dt><dd>2014-12-25 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>The digit to display (must be between 0 and 9, inclusive) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMap</td><td>A pointer to the PinOut that maps the relationship between the pins of the Arduino and those of the seven-segment LED display being used </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00072">72</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
+<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00096">96</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ledseven_8h.html#af6a7d641c0d0230c02891695b79b0793">printHex()</a>.</p>
+<p>Referenced by <a class="el" href="ledseven_8h.html#a45583e6d929fa21b9811f64dd6e84a7a">printHex()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af6a7d641c0d0230c02891695b79b0793"></a>
+<a class="anchor" id="a45583e6d929fa21b9811f64dd6e84a7a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void printHex </td>
           <td>(</td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *&#160;</td>
+          <td class="paramname"><em>pinMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The <code>printHex</code> function is designed to print a hexadecimal digit to a seven-segment LED.</p>
+
+<p>Prints a hexadecimal digit to the display. </p>
+<p>The <code>printHex</code> function is designed to print a hexadecimal digit to a seven-segment LED display.</p>
+<p>Note that, if the value passed as the digit to display does not match an accepted value, a dash (<code>-</code>) will be displayed instead.</p>
 <dl class="section since"><dt>Since</dt><dd>2014-12-25 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>The digit to display (Must be between 0x0 and 0xF, inclusive) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMap</td><td>A pointer to the PinOut that maps the relationship between the pins of the Arduino and those of the seven-segment LED display being used </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00016">16</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
+<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00034">34</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7ca3b7b054ccc8babce289b2e56f38fc"></a>
+<a class="anchor" id="a00ac6a7c432bf0eca834d4bd9f456e37"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void printPeriod </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a> *&#160;</td>
+          <td class="paramname"><em>pinMap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The <code> printPeriod</code> function will display a period on the seven- segment LED.</p>
+<p>The <code> printPeriod</code> function will display a period on the seven- segment LED display.</p>
 <dl class="section since"><dt>Since</dt><dd>2014-12-25 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMap</td><td>A pointer to the PinOut that maps the relationship between the pins of the Arduino and those of the seven-segment LED display being used </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00148">148</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
+<p>Definition at line <a class="el" href="ledseven_8c_source.html#l00173">173</a> of file <a class="el" href="ledseven_8c_source.html">ledseven.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 21:34:05 for 7-Segment LED Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 26 2014 17:15:19 for 7-Segment LED Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

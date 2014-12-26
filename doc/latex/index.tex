@@ -1,4 +1,18 @@
+\subsection*{Copyright }
+
 Copyright 2014 by Ethan Ruffing
+
+\subsection*{License }
+
+This file is part of ledseven.
+
+Ledseven is free software\+: you can redistribute it and/or modify it under the terms of the G\+N\+U Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Ledseven is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+U\+T A\+N\+Y W\+A\+R\+R\+A\+N\+T\+Y; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y or F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+A\+R P\+U\+R\+P\+O\+S\+E. See the G\+N\+U Lesser General Public License for more details.
+
+You should have received a copy of the G\+N\+U Lesser General Public License along with ledseven. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}.
+
+\subsection*{Overview }
 
 This is a library designed for using a seven-\/segment L\+E\+D with an Arduino U\+N\+O.
 
@@ -14,17 +28,8 @@ e     f    __
 \end{DoxyVerb}
 
 
-These L\+E\+D display pins are then expected to be connected to an Arduino U\+N\+O's digital pins according to the following table\+:
+These L\+E\+D display pins are then mapped to the Arduino's digital pins using the {\ttfamily \hyperlink{structpin_out}{pin\+Out}} struct.
 
-\begin{TabularC}{2}
-\hline
-\rowcolor{lightgray}\PBS\centering {\bf L\+E\+D Pin }&\PBS\centering {\bf Arduino Pin  }\\\cline{1-2}
-\PBS\centering A &\PBS\centering 2 \\\cline{1-2}
-\PBS\centering B &\PBS\centering 3 \\\cline{1-2}
-\PBS\centering C &\PBS\centering 4 \\\cline{1-2}
-\PBS\centering D &\PBS\centering 6 \\\cline{1-2}
-\PBS\centering E &\PBS\centering 7 \\\cline{1-2}
-\PBS\centering F &\PBS\centering 8 \\\cline{1-2}
-\PBS\centering G &\PBS\centering 9 \\\cline{1-2}
-\PBS\centering D\+P &\PBS\centering 5 \\\cline{1-2}
-\end{TabularC}
+To get started using the library, create a {\ttfamily Pin\+Out} variable and define each of its members according to the documentation for the {\ttfamily \hyperlink{structpin_out}{pin\+Out}} struct. Then, simply call the function for the type of output you wish to display, and pass the value to be displayed along with a pointer to your pin mapping variable.
+
+Note that, on each call to print a new value to the display, the old value will not be automatically cleared. Instead, to clear it, you must call {\ttfamily \hyperlink{ledseven_8h_abe6d5e49ec90a2d549034ecfe19e719f}{clear\+Screen(const Pin\+Out $\ast$pin\+Map)}}. 
