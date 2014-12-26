@@ -7,7 +7,5 @@ var searchData=
   ['ledpindp',['ledPinDP',['../structpin_out.html#a792d269e540bea0a98e97049975fc110',1,'pinOut']]],
   ['ledpine',['ledPinE',['../structpin_out.html#a34d7db1c42f58d60de9e5f0e10a740a2',1,'pinOut']]],
   ['ledpinf',['ledPinF',['../structpin_out.html#a56e435d512b1ef24ca847884487314b6',1,'pinOut']]],
-  ['ledping',['ledPinG',['../structpin_out.html#a34bb874b0fc3ef1cf5e6956a317d18ef',1,'pinOut']]],
-  ['ledseven_2ec',['ledseven.c',['../ledseven_8c.html',1,'']]],
-  ['ledseven_2eh',['ledseven.h',['../ledseven_8h.html',1,'']]]
+  ['ledping',['ledPinG',['../structpin_out.html#a34bb874b0fc3ef1cf5e6956a317d18ef',1,'pinOut']]]
 ];

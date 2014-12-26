@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,37 +85,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="ledseven_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef LEDseven_h</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define LEDseven_h</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define LED_PIN_A 2</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define LED_PIN_B 3</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define LED_PIN_C 4</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define LED_PIN_DP 5</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define LED_PIN_D 6</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define LED_PIN_E 7</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define LED_PIN_F 8</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define LED_PIN_G 9</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#af6a7d641c0d0230c02891695b79b0793">printHex</a>(uint i);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#a9e91ffda97a3a0e4a44d32562df5e7c3">printDec</a>(uint i);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#a7ca3b7b054ccc8babce289b2e56f38fc">printPeriod</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#a9d7e8af417b6d543da691e9c0e2f6f9f">clearScreen</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // LEDseven_h</span></div>
-<div class="ttc" id="ledseven_8h_html_a9d7e8af417b6d543da691e9c0e2f6f9f"><div class="ttname"><a href="ledseven_8h.html#a9d7e8af417b6d543da691e9c0e2f6f9f">clearScreen</a></div><div class="ttdeci">void clearScreen()</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00153">ledseven.c:153</a></div></div>
-<div class="ttc" id="ledseven_8h_html_a7ca3b7b054ccc8babce289b2e56f38fc"><div class="ttname"><a href="ledseven_8h.html#a7ca3b7b054ccc8babce289b2e56f38fc">printPeriod</a></div><div class="ttdeci">void printPeriod()</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00148">ledseven.c:148</a></div></div>
-<div class="ttc" id="ledseven_8h_html_af6a7d641c0d0230c02891695b79b0793"><div class="ttname"><a href="ledseven_8h.html#af6a7d641c0d0230c02891695b79b0793">printHex</a></div><div class="ttdeci">void printHex(uint i)</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00016">ledseven.c:16</a></div></div>
-<div class="ttc" id="ledseven_8h_html_a9e91ffda97a3a0e4a44d32562df5e7c3"><div class="ttname"><a href="ledseven_8h.html#a9e91ffda97a3a0e4a44d32562df5e7c3">printDec</a></div><div class="ttdeci">void printDec(uint i)</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00072">ledseven.c:72</a></div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef LEDseven_h</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define LEDseven_h</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structpin_out.html">   72</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpin_out.html">pinOut</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structpin_out.html#a54c52aca2a7fdccb479c5a6913990e63">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a54c52aca2a7fdccb479c5a6913990e63">ledPinA</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structpin_out.html#af3461f90e21457cdb1f46a3d8085ac06">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#af3461f90e21457cdb1f46a3d8085ac06">ledPinB</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structpin_out.html#afb9d6f76a96cc304defd23f3be3a0c9d">   81</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#afb9d6f76a96cc304defd23f3be3a0c9d">ledPinC</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structpin_out.html#a7cf8e2fe62554d6edd30f6452a8c9a62">   84</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a7cf8e2fe62554d6edd30f6452a8c9a62">ledPinD</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structpin_out.html#a34d7db1c42f58d60de9e5f0e10a740a2">   87</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a34d7db1c42f58d60de9e5f0e10a740a2">ledPinE</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structpin_out.html#a56e435d512b1ef24ca847884487314b6">   90</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a56e435d512b1ef24ca847884487314b6">ledPinF</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structpin_out.html#a34bb874b0fc3ef1cf5e6956a317d18ef">   93</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a34bb874b0fc3ef1cf5e6956a317d18ef">ledPinG</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structpin_out.html#a792d269e540bea0a98e97049975fc110">   96</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structpin_out.html#a792d269e540bea0a98e97049975fc110">ledPinDP</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <a class="code" href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#a45583e6d929fa21b9811f64dd6e84a7a">printHex</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <a class="code" href="structpin_out.html">PinOut</a> *pinMap);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#ad1f744b2deedb958050b0f025bd1df14">printDec</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <a class="code" href="structpin_out.html">PinOut</a> *pinMap);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#a00ac6a7c432bf0eca834d4bd9f456e37">printPeriod</a>(<span class="keyword">const</span> <a class="code" href="structpin_out.html">PinOut</a> *pinMap);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ledseven_8h.html#abe6d5e49ec90a2d549034ecfe19e719f">clearScreen</a>(<span class="keyword">const</span> <a class="code" href="structpin_out.html">PinOut</a> *pinMap);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif // LEDseven_h</span></div>
+<div class="ttc" id="ledseven_8h_html_a45583e6d929fa21b9811f64dd6e84a7a"><div class="ttname"><a href="ledseven_8h.html#a45583e6d929fa21b9811f64dd6e84a7a">printHex</a></div><div class="ttdeci">void printHex(unsigned int i, const PinOut *pinMap)</div><div class="ttdoc">Prints a hexadecimal digit to the display. </div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00034">ledseven.c:34</a></div></div>
+<div class="ttc" id="structpin_out_html_a7cf8e2fe62554d6edd30f6452a8c9a62"><div class="ttname"><a href="structpin_out.html#a7cf8e2fe62554d6edd30f6452a8c9a62">pinOut::ledPinD</a></div><div class="ttdeci">int ledPinD</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00084">ledseven.h:84</a></div></div>
+<div class="ttc" id="structpin_out_html_afb9d6f76a96cc304defd23f3be3a0c9d"><div class="ttname"><a href="structpin_out.html#afb9d6f76a96cc304defd23f3be3a0c9d">pinOut::ledPinC</a></div><div class="ttdeci">int ledPinC</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00081">ledseven.h:81</a></div></div>
+<div class="ttc" id="structpin_out_html_a34bb874b0fc3ef1cf5e6956a317d18ef"><div class="ttname"><a href="structpin_out.html#a34bb874b0fc3ef1cf5e6956a317d18ef">pinOut::ledPinG</a></div><div class="ttdeci">int ledPinG</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00093">ledseven.h:93</a></div></div>
+<div class="ttc" id="structpin_out_html_a56e435d512b1ef24ca847884487314b6"><div class="ttname"><a href="structpin_out.html#a56e435d512b1ef24ca847884487314b6">pinOut::ledPinF</a></div><div class="ttdeci">int ledPinF</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00090">ledseven.h:90</a></div></div>
+<div class="ttc" id="structpin_out_html_a792d269e540bea0a98e97049975fc110"><div class="ttname"><a href="structpin_out.html#a792d269e540bea0a98e97049975fc110">pinOut::ledPinDP</a></div><div class="ttdeci">int ledPinDP</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00096">ledseven.h:96</a></div></div>
+<div class="ttc" id="structpin_out_html_af3461f90e21457cdb1f46a3d8085ac06"><div class="ttname"><a href="structpin_out.html#af3461f90e21457cdb1f46a3d8085ac06">pinOut::ledPinB</a></div><div class="ttdeci">int ledPinB</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00078">ledseven.h:78</a></div></div>
+<div class="ttc" id="structpin_out_html_a54c52aca2a7fdccb479c5a6913990e63"><div class="ttname"><a href="structpin_out.html#a54c52aca2a7fdccb479c5a6913990e63">pinOut::ledPinA</a></div><div class="ttdeci">int ledPinA</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00075">ledseven.h:75</a></div></div>
+<div class="ttc" id="ledseven_8h_html_a00ac6a7c432bf0eca834d4bd9f456e37"><div class="ttname"><a href="ledseven_8h.html#a00ac6a7c432bf0eca834d4bd9f456e37">printPeriod</a></div><div class="ttdeci">void printPeriod(const PinOut *pinMap)</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00173">ledseven.c:173</a></div></div>
+<div class="ttc" id="structpin_out_html"><div class="ttname"><a href="structpin_out.html">pinOut</a></div><div class="ttdoc">A mapping of Arduino pins to seven-segment LED display pins. </div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00072">ledseven.h:72</a></div></div>
+<div class="ttc" id="ledseven_8h_html_ad1f744b2deedb958050b0f025bd1df14"><div class="ttname"><a href="ledseven_8h.html#ad1f744b2deedb958050b0f025bd1df14">printDec</a></div><div class="ttdeci">void printDec(unsigned int i, const PinOut *pinMap)</div><div class="ttdoc">Prints a decimal digit to the display. </div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00096">ledseven.c:96</a></div></div>
+<div class="ttc" id="ledseven_8h_html_abe6d5e49ec90a2d549034ecfe19e719f"><div class="ttname"><a href="ledseven_8h.html#abe6d5e49ec90a2d549034ecfe19e719f">clearScreen</a></div><div class="ttdeci">void clearScreen(const PinOut *pinMap)</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8c_source.html#l00178">ledseven.c:178</a></div></div>
+<div class="ttc" id="structpin_out_html_a34d7db1c42f58d60de9e5f0e10a740a2"><div class="ttname"><a href="structpin_out.html#a34d7db1c42f58d60de9e5f0e10a740a2">pinOut::ledPinE</a></div><div class="ttdeci">int ledPinE</div><div class="ttdef"><b>Definition:</b> <a href="ledseven_8h_source.html#l00087">ledseven.h:87</a></div></div>
+<div class="ttc" id="ledseven_8h_html_a520291f463d8e59dcf1aebf78782d263"><div class="ttname"><a href="ledseven_8h.html#a520291f463d8e59dcf1aebf78782d263">PinOut</a></div><div class="ttdeci">struct pinOut PinOut</div><div class="ttdoc">A typedef for the mapping of pins between the Arduino and seven- segment LED display. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 25 2014 21:34:05 for 7-Segment LED Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 26 2014 17:15:19 for 7-Segment LED Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
