@@ -8,7 +8,7 @@
  * @version 0.0.0
  */
 
-#include "LEDseven.h"
+#include "ledseven.h"
 
 void printHex(int i)
 {
