@@ -119,8 +119,12 @@ void printDec(uint i, const PinOut *pinMap);
  *
  * @since 2014-12-25
  * @version 0.1.0
+ *
+ * @param[in] pinMap
+ *     A pointer to the PinOut that maps the relationship between the pins of
+ *     the Arduino and those of the seven-segment LED display being used
  */
-void printPeriod();
+void printPeriod(const PinOut *pinMap);
 
 /**
  * The <code>clearScreen</code> function is designed to clear a seven-segment

@@ -147,7 +147,7 @@ void printDec(uint i)
 
 void printPeriod()
 {
-	digitalWrite(LED_PIN_DP, HIGH);
+	digitalWrite(pinMap.ledPinDP, HIGH);
 }
 
 void clearScreen()
