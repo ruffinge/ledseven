@@ -15,15 +15,6 @@
 
 #include <Arduino.h>
 
-#define LED_PIN_A 2
-#define LED_PIN_B 3
-#define LED_PIN_C 4
-#define LED_PIN_DP 5
-#define LED_PIN_D 6
-#define LED_PIN_E 7
-#define LED_PIN_F 8
-#define LED_PIN_G 9
-
 /**
  * @struct pinOut
  *
@@ -132,7 +123,7 @@ void printPeriod(const PinOut *pinMap);
  *
  * @since 2014-12-25
  * @version 0.1.0
- * 
+ *
  * @param[in] pinMap
  *     A pointer to the PinOut that maps the relationship between the pins of
  *     the Arduino and those of the seven-segment LED display being used
