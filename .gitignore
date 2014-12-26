@@ -49,3 +49,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### Code::Blocks-related ignores ###
+*.layout
