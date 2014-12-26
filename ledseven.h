@@ -38,7 +38,7 @@
  * For example, if the LED display's pin A has been connected to the Arduino's
  * digital pin 2, then `pinOut.ledPinA` should be assigned a value of `2`.
  *
- * @since 2014-12-25
+ * @since 2014-12-26
  * @version 0.1.0
  */
 struct pinOut {
@@ -77,6 +77,9 @@ struct pinOut {
  * This type is to be used when creating the mapping between the pins of the
  * Arduino and those of the seven-segment LED display. For details on creating
  * the mapping, see pinOut.
+ *
+ * @since 2014-12-26
+ * @version 0.1.0
  */
 typedef struct pinOut PinOut;
 
