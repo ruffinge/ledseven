@@ -8,7 +8,7 @@
  *
  * @author Ethan Ruffing <ruffinge@gmail.com>
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  */
 
 #include "ledseven.h"

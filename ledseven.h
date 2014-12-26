@@ -9,7 +9,7 @@
  *
  * @author Ethan Ruffing <ruffinge@gmail.com>
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  *
  * @todo Convert to C++ and make the library object-oriented
  */
@@ -32,7 +32,7 @@
  * the mapping, see the documentation for pinOut.
  *
  * @since 2014-12-26
- * @version 0.1.0
+ * @version 0.2.0
  */
 /**
  * @struct pinOut
@@ -49,7 +49,7 @@
  * digital pin 2, then `pinOut.ledPinA` should be assigned a value of `2`.
  *
  * @since 2014-12-26
- * @version 0.1.0
+ * @version 0.2.0
  */
 typedef struct pinOut
 {
@@ -89,7 +89,7 @@ typedef struct pinOut
  * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  *
  * @param[in] i
  *     The digit to display (Must be between 0x0 and 0xF, inclusive)
@@ -110,7 +110,7 @@ void printHex(unsigned int i, const PinOut *pinMap);
  * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  *
  * @param[in] i
  *     The digit to display (must be between 0 and 9, inclusive)
@@ -125,7 +125,7 @@ void printDec(unsigned int i, const PinOut *pinMap);
  * segment LED display.
  *
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  *
  * @param[in] pinMap
  *     A pointer to the PinOut that maps the relationship between the pins of
@@ -138,7 +138,7 @@ void printPeriod(const PinOut *pinMap);
  * LED display so that it can be written to again.
  *
  * @since 2014-12-25
- * @version 0.1.0
+ * @version 0.2.0
  *
  * @param[in] pinMap
  *     A pointer to the PinOut that maps the relationship between the pins of
