@@ -25,6 +25,49 @@
 #define LED_PIN_G 9
 
 /**
+ * @struct pinOut
+ *
+ * @brief A mapping of Arduino pins to seven-segment LED display pins
+ *
+ * @details
+ * The `pinOut` struct is designed to provide a system for mapping the Arduino
+ * UNO's digital pins to the seven-segment LED display's pins. Each member
+ * within the `pinOut` struct should be assigned an integer corresponding to the
+ * Arduino digital pin to which that member has been linked.
+ *
+ * For example, if the LED display's pin A has been connected to the Arduino's
+ * digital pin 2, then `pinOut.ledPinA` should be assigned a value of `2`.
+ *
+ * @since 2014-12-25
+ * @version 0.1.0
+ */
+struct pinOut {
+    /** The Arduino digital pin corresponding to the LED display's pin A */
+    int ledPinA;
+
+    /** The Arduino digital pin corresponding to the LED display's pin B */
+    int ledPinB;
+
+    /** The Arduino digital pin corresponding to the LED display's pin C */
+    int ledPinC;
+
+    /** The Arduino digital pin corresponding to the LED display's pin D */
+    int ledPinD;
+
+    /** The Arduino digital pin corresponding to the LED display's pin E */
+    int ledPinE;
+
+    /** The Arduino digital pin corresponding to the LED display's pin F */
+    int ledPinF;
+
+    /** The Arduino digital pin corresponding to the LED display's pin G */
+    int ledPinG;
+
+    /** The Arduino digital pin corresponding to the LED display's pin DP */
+    int ledPinDP;
+}
+
+/**
  * The <code>printHex</code> function is designed to print a hexadecimal digit
  * to a seven-segment LED.
  *
