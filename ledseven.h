@@ -68,6 +68,19 @@ struct pinOut {
 }
 
 /**
+ * @typedef struct pinOut PinOut
+ *
+ * @brief A typedef for the mapping of pins between the Arduino and seven-
+ * segment LED display.
+ *
+ * @details
+ * This type is to be used when creating the mapping between the pins of the
+ * Arduino and those of the seven-segment LED display. For details on creating
+ * the mapping, see pinOut.
+ */
+typedef struct pinOut PinOut;
+
+/**
  * The <code>printHex</code> function is designed to print a hexadecimal digit
  * to a seven-segment LED.
  *
