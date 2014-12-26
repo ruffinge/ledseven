@@ -12,19 +12,20 @@
 
 void printHex(int i)
 {
-	switch (i) {
-		case 0:
-
-		default:
+	switch (i)
+	{
+	case 0:
+	default:
 	}
 }
 
 void printDec(int i)
 {
-	switch (i) {
-		case 0:
+	switch (i)
+	{
+	case 0:
 
-		default:
+	default:
 	}
 }
 
