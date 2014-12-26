@@ -92,8 +92,11 @@ typedef struct pinOut PinOut;
  *
  * @param[in] i
  *     The digit to display (Must be between 0x0 and 0xF, inclusive)
+ * @param[in] pinMap
+ *     A pointer to the PinOut that maps the relationship between the pins of
+ *     the Arduino and those of the seven-segment LED display being used
  */
-void printHex(uint i);
+void printHex(uint i, const PinOut *pinMap);
 
 /**
  * The <code>printDec</code> function is designed to print a decimal digit to a
