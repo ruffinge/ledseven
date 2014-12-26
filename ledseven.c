@@ -1,5 +1,8 @@
 /**
- * @file
+ * @file ledseven.c
+ * @brief The main sources for the library.
+ *
+ * @details
  * This file contains the source for the functions to write to the seven-segment
  * LED.
  *

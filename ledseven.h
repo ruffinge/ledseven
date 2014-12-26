@@ -1,3 +1,13 @@
+/**
+ * @file ledseven.h
+ * @brief The header file for the library.
+ *
+ * @details
+ * The <code>ledseven.h</code> file is the primary header file for this library.
+ * It contains all necessary declarations, preprocessor statements, and related
+ * code.
+ */
+
 #ifndef LEDseven_h
 #define LEDseven_h
 
