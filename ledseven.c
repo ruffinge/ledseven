@@ -15,10 +15,14 @@
 
 void printHex(unsigned int i, const PinOut *pinMap)
 {
-	if (0 <= i && i <= 9) {
+	if (0 <= i && i <= 9)
+	{
 		printDec(i, pinMap);
-	} else {
-		switch (i) {
+	}
+	else
+	{
+		switch (i)
+		{
 		case 0xA:
 			digitalWrite((*pinMap).ledPinA, HIGH);
 			digitalWrite((*pinMap).ledPinB, HIGH);
@@ -73,7 +77,8 @@ void printHex(unsigned int i, const PinOut *pinMap)
 
 void printDec(unsigned int i, const pinOut *pinMap)
 {
-	switch (i) {
+	switch (i)
+	{
 	case 0:
 		digitalWrite((*pinMap).ledPinA, HIGH);
 		digitalWrite((*pinMap).ledPinB, HIGH);

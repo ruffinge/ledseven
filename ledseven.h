@@ -49,30 +49,31 @@
  * @since 2014-12-26
  * @version 0.1.0
  */
-typedef struct pinOut {
-    /** The Arduino digital pin corresponding to the LED display's pin A */
-    int ledPinA;
+typedef struct pinOut
+{
+	/** The Arduino digital pin corresponding to the LED display's pin A */
+	int ledPinA;
 
-    /** The Arduino digital pin corresponding to the LED display's pin B */
-    int ledPinB;
+	/** The Arduino digital pin corresponding to the LED display's pin B */
+	int ledPinB;
 
-    /** The Arduino digital pin corresponding to the LED display's pin C */
-    int ledPinC;
+	/** The Arduino digital pin corresponding to the LED display's pin C */
+	int ledPinC;
 
-    /** The Arduino digital pin corresponding to the LED display's pin D */
-    int ledPinD;
+	/** The Arduino digital pin corresponding to the LED display's pin D */
+	int ledPinD;
 
-    /** The Arduino digital pin corresponding to the LED display's pin E */
-    int ledPinE;
+	/** The Arduino digital pin corresponding to the LED display's pin E */
+	int ledPinE;
 
-    /** The Arduino digital pin corresponding to the LED display's pin F */
-    int ledPinF;
+	/** The Arduino digital pin corresponding to the LED display's pin F */
+	int ledPinF;
 
-    /** The Arduino digital pin corresponding to the LED display's pin G */
-    int ledPinG;
+	/** The Arduino digital pin corresponding to the LED display's pin G */
+	int ledPinG;
 
-    /** The Arduino digital pin corresponding to the LED display's pin DP */
-    int ledPinDP;
+	/** The Arduino digital pin corresponding to the LED display's pin DP */
+	int ledPinDP;
 } PinOut;
 
 /**
