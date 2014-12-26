@@ -4,6 +4,7 @@ CHANGELOG
 * Added adjustable pin mappings
 * Added struct `pinOut` for pin mappings and modified function arguments to
   accept it
+* Added licensing under LGPL V3.0
 
 ## 0.1.0 ##
 * Initial release
