@@ -69,7 +69,7 @@ struct pinOut {
  * @details
  * This type is to be used when creating the mapping between the pins of the
  * Arduino and those of the seven-segment LED display. For details on creating
- * the mapping, see pinOut.
+ * the mapping, see the documentation for pinOut.
  *
  * @since 2014-12-26
  * @version 0.1.0
