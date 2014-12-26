@@ -1,0 +1,30 @@
+Copyright 2014 by Ethan Ruffing
+
+This is a library designed for using a seven-\/segment L\+E\+D with an Arduino U\+N\+O.
+
+This library is designed for use with a seven-\/segment L\+E\+D display, set up according to a \char`\"{}common ground\char`\"{} scheme which follows the following pin diagram (note that pin {\ttfamily dp} represents pin for the dot/period)\+: \begin{DoxyVerb} - a -
+|     |
+f     g
+|     |
+ - g -
+|     |
+e     f    __
+|     |   |dp|
+ - d -     --
+\end{DoxyVerb}
+
+
+These L\+E\+D display pins are then expected to be connected to an Arduino U\+N\+O's digital pins according to the following table\+:
+
+\begin{TabularC}{2}
+\hline
+\rowcolor{lightgray}\PBS\centering {\bf L\+E\+D Pin }&\PBS\centering {\bf Arduino Pin  }\\\cline{1-2}
+\PBS\centering A &\PBS\centering 2 \\\cline{1-2}
+\PBS\centering B &\PBS\centering 3 \\\cline{1-2}
+\PBS\centering C &\PBS\centering 4 \\\cline{1-2}
+\PBS\centering D &\PBS\centering 6 \\\cline{1-2}
+\PBS\centering E &\PBS\centering 7 \\\cline{1-2}
+\PBS\centering F &\PBS\centering 8 \\\cline{1-2}
+\PBS\centering G &\PBS\centering 9 \\\cline{1-2}
+\PBS\centering D\+P &\PBS\centering 5 \\\cline{1-2}
+\end{TabularC}

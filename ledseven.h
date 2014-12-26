@@ -6,6 +6,8 @@
  * The <code>ledseven.h</code> file is the primary header file for this library.
  * It contains all necessary declarations, preprocessor statements, and related
  * code.
+ *
+ * @version 0.1.0
  */
 
 #ifndef LEDseven_h
@@ -27,6 +29,7 @@
  * to a seven-segment LED.
  *
  * @since 2014-12-25
+ * @version 0.1.0
  *
  * @param[in] i
  *     The digit to display (Must be between 0x0 and 0xF, inclusive)
@@ -38,6 +41,7 @@ void printHex(uint i);
  * seven-segment LED.
  *
  * @since 2014-12-25
+ * @version 0.1.0
  *
  * @param[in] i
  *     The digit to display (must be between 0 and 9, inclusive)
@@ -49,6 +53,7 @@ void printDec(uint i);
  * segment LED.
  *
  * @since 2014-12-25
+ * @version 0.1.0
  */
 void printPeriod();
 
