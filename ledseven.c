@@ -147,12 +147,12 @@ void printDec(unsigned int i, const pinOut *pinMap)
 	}
 }
 
-void printPeriod()
+void printPeriod(const PinOut *pinMap)
 {
 	digitalWrite((*pinMap).ledPinDP, HIGH);
 }
 
-void clearScreen()
+void clearScreen(const PinOut *pinMap)
 {
 	digitalWrite((*pinMap).ledPinA, LOW);
 	digitalWrite((*pinMap).ledPinB, LOW);
