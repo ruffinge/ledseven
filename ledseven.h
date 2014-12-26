@@ -79,8 +79,14 @@ typedef struct pinOut
 } PinOut;
 
 /**
+ * @brief Prints a hexadecimal digit to the display.
+ *
+ * @details
  * The <code>printHex</code> function is designed to print a hexadecimal digit
- * to a seven-segment LED.
+ * to a seven-segment LED display.
+ *
+ * Note that, if the value passed as the digit to display does not match an
+ * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
  * @version 0.1.0
@@ -94,8 +100,14 @@ typedef struct pinOut
 void printHex(unsigned int i, const PinOut *pinMap);
 
 /**
+ * @brief Prints a decimal digit to the display.
+ *
+ * @details
  * The <code>printDec</code> function is designed to print a decimal digit to a
- * seven-segment LED.
+ * seven-segment LED display.
+ *
+ * Note that, if the value passed as the digit to display does not match an
+ * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
  * @version 0.1.0
@@ -110,7 +122,7 @@ void printDec(unsigned int i, const PinOut *pinMap);
 
 /**
  * The <code> printPeriod</code> function will display a period on the seven-
- * segment LED.
+ * segment LED display.
  *
  * @since 2014-12-25
  * @version 0.1.0
@@ -123,7 +135,7 @@ void printPeriod(const PinOut *pinMap);
 
 /**
  * The <code>clearScreen</code> function is designed to clear a seven-segment
- * LED so that it can be written to again.
+ * LED display so that it can be written to again.
  *
  * @since 2014-12-25
  * @version 0.1.0
