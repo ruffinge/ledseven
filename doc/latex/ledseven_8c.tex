@@ -10,13 +10,13 @@ The main sources for the library.
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}{print\+Hex} (uint i)
+void \hyperlink{ledseven_8c_a45583e6d929fa21b9811f64dd6e84a7a}{print\+Hex} (unsigned int i, const \hyperlink{ledseven_8h_a520291f463d8e59dcf1aebf78782d263}{Pin\+Out} $\ast$pin\+Map)
+\begin{DoxyCompactList}\small\item\em Prints a hexadecimal digit to the display. \end{DoxyCompactList}\item 
+void \hyperlink{ledseven_8c_a3b9f68afcfd5f12fbdeec0368285e59b}{print\+Dec} (unsigned int i, const \hyperlink{structpin_out}{pin\+Out} $\ast$pin\+Map)
+\begin{DoxyCompactList}\small\item\em Prints a decimal digit to the display. \end{DoxyCompactList}\item 
+void \hyperlink{ledseven_8c_a00ac6a7c432bf0eca834d4bd9f456e37}{print\+Period} (const \hyperlink{ledseven_8h_a520291f463d8e59dcf1aebf78782d263}{Pin\+Out} $\ast$pin\+Map)
 \item 
-void \hyperlink{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}{print\+Dec} (uint i)
-\item 
-void \hyperlink{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}{print\+Period} ()
-\item 
-void \hyperlink{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clear\+Screen} ()
+void \hyperlink{ledseven_8c_abe6d5e49ec90a2d549034ecfe19e719f}{clear\+Screen} (const \hyperlink{ledseven_8h_a520291f463d8e59dcf1aebf78782d263}{Pin\+Out} $\ast$pin\+Map)
 \end{DoxyCompactItemize}
 
 
@@ -32,8 +32,23 @@ Ethan Ruffing \href{mailto:ruffinge@gmail.com}{\tt ruffinge@gmail.\+com}
 2014-\/12-\/25 
 \end{DoxySince}
 \begin{DoxyVersion}{Version}
-0.\+1.\+0 
+0.\+2.\+0
 \end{DoxyVersion}
+\begin{DoxyCopyright}{Copyright}
+Copyright 2014 by Ethan Ruffing \href{mailto:ruffinge@gmail.com}{\tt ruffinge@gmail.\+com}
+\end{DoxyCopyright}
+\begin{DoxyParagraph}{License\+:}
+This file is part of ledseven. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Ledseven is free software\+: you can redistribute it and/or modify it under the terms of the G\+N\+U Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Ledseven is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+U\+T A\+N\+Y W\+A\+R\+R\+A\+N\+T\+Y; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+T\+Y or F\+I\+T\+N\+E\+S\+S F\+O\+R A P\+A\+R\+T\+I\+C\+U\+L\+A\+R P\+U\+R\+P\+O\+S\+E. See the G\+N\+U Lesser General Public License for more details. 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+You should have received a copy of the G\+N\+U Lesser General Public License along with ledseven. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. 
+\end{DoxyParagraph}
 
 
 Definition in file \hyperlink{ledseven_8c_source}{ledseven.\+c}.
@@ -41,90 +56,121 @@ Definition in file \hyperlink{ledseven_8c_source}{ledseven.\+c}.
 
 
 \subsection{Function Documentation}
-\hypertarget{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{\index{ledseven.\+c@{ledseven.\+c}!clear\+Screen@{clear\+Screen}}
+\hypertarget{ledseven_8c_abe6d5e49ec90a2d549034ecfe19e719f}{\index{ledseven.\+c@{ledseven.\+c}!clear\+Screen@{clear\+Screen}}
 \index{clear\+Screen@{clear\+Screen}!ledseven.\+c@{ledseven.\+c}}
 \subsubsection[{clear\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+Screen (
 \begin{DoxyParamCaption}
-{}
+\item[{const {\bf Pin\+Out} $\ast$}]{pin\+Map}
 \end{DoxyParamCaption}
-)}}\label{ledseven_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}
-The {\ttfamily clear\+Screen} function is designed to clear a seven-\/segment L\+E\+D so that it can be written to again.
-
-\begin{DoxySince}{Since}
-2014-\/12-\/25 
-\end{DoxySince}
-
-
-Definition at line 153 of file ledseven.\+c.
-
-\hypertarget{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}{\index{ledseven.\+c@{ledseven.\+c}!print\+Dec@{print\+Dec}}
-\index{print\+Dec@{print\+Dec}!ledseven.\+c@{ledseven.\+c}}
-\subsubsection[{print\+Dec}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Dec (
-\begin{DoxyParamCaption}
-\item[{uint}]{i}
-\end{DoxyParamCaption}
-)}}\label{ledseven_8c_a9e91ffda97a3a0e4a44d32562df5e7c3}
-The {\ttfamily print\+Dec} function is designed to print a decimal digit to a seven-\/segment L\+E\+D.
+)}}\label{ledseven_8c_abe6d5e49ec90a2d549034ecfe19e719f}
+The {\ttfamily clear\+Screen} function is designed to clear a seven-\/segment L\+E\+D display so that it can be written to again.
 
 \begin{DoxySince}{Since}
 2014-\/12-\/25 
 \end{DoxySince}
 \begin{DoxyVersion}{Version}
-0.\+1.\+0
+0.\+2.\+0
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Map} & A pointer to the Pin\+Out that maps the relationship between the pins of the Arduino and those of the seven-\/segment L\+E\+D display being used \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 178 of file ledseven.\+c.
+
+\hypertarget{ledseven_8c_a3b9f68afcfd5f12fbdeec0368285e59b}{\index{ledseven.\+c@{ledseven.\+c}!print\+Dec@{print\+Dec}}
+\index{print\+Dec@{print\+Dec}!ledseven.\+c@{ledseven.\+c}}
+\subsubsection[{print\+Dec}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Dec (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i, }
+\item[{const {\bf Pin\+Out} $\ast$}]{pin\+Map}
+\end{DoxyParamCaption}
+)}}\label{ledseven_8c_a3b9f68afcfd5f12fbdeec0368285e59b}
+
+
+Prints a decimal digit to the display. 
+
+The {\ttfamily print\+Dec} function is designed to print a decimal digit to a seven-\/segment L\+E\+D display.
+
+Note that, if the value passed as the digit to display does not match an accepted value, a dash ({\ttfamily -\/}) will be displayed instead.
+
+\begin{DoxySince}{Since}
+2014-\/12-\/25 
+\end{DoxySince}
+\begin{DoxyVersion}{Version}
+0.\+2.\+0
 \end{DoxyVersion}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em i} & The digit to display (must be between 0 and 9, inclusive) \\
 \hline
+\mbox{\tt in}  & {\em pin\+Map} & A pointer to the Pin\+Out that maps the relationship between the pins of the Arduino and those of the seven-\/segment L\+E\+D display being used \\
+\hline
 \end{DoxyParams}
 
 
-Definition at line 72 of file ledseven.\+c.
+Definition at line 96 of file ledseven.\+c.
 
 
 
 Referenced by print\+Hex().
 
-\hypertarget{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}{\index{ledseven.\+c@{ledseven.\+c}!print\+Hex@{print\+Hex}}
+\hypertarget{ledseven_8c_a45583e6d929fa21b9811f64dd6e84a7a}{\index{ledseven.\+c@{ledseven.\+c}!print\+Hex@{print\+Hex}}
 \index{print\+Hex@{print\+Hex}!ledseven.\+c@{ledseven.\+c}}
 \subsubsection[{print\+Hex}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Hex (
 \begin{DoxyParamCaption}
-\item[{uint}]{i}
+\item[{unsigned int}]{i, }
+\item[{const {\bf Pin\+Out} $\ast$}]{pin\+Map}
 \end{DoxyParamCaption}
-)}}\label{ledseven_8c_af6a7d641c0d0230c02891695b79b0793}
-The {\ttfamily print\+Hex} function is designed to print a hexadecimal digit to a seven-\/segment L\+E\+D.
+)}}\label{ledseven_8c_a45583e6d929fa21b9811f64dd6e84a7a}
+
+
+Prints a hexadecimal digit to the display. 
+
+The {\ttfamily print\+Hex} function is designed to print a hexadecimal digit to a seven-\/segment L\+E\+D display.
+
+Note that, if the value passed as the digit to display does not match an accepted value, a dash ({\ttfamily -\/}) will be displayed instead.
 
 \begin{DoxySince}{Since}
 2014-\/12-\/25 
 \end{DoxySince}
 \begin{DoxyVersion}{Version}
-0.\+1.\+0
+0.\+2.\+0
 \end{DoxyVersion}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em i} & The digit to display (Must be between 0x0 and 0x\+F, inclusive) \\
 \hline
+\mbox{\tt in}  & {\em pin\+Map} & A pointer to the Pin\+Out that maps the relationship between the pins of the Arduino and those of the seven-\/segment L\+E\+D display being used \\
+\hline
 \end{DoxyParams}
 
 
-Definition at line 16 of file ledseven.\+c.
+Definition at line 34 of file ledseven.\+c.
 
-\hypertarget{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}{\index{ledseven.\+c@{ledseven.\+c}!print\+Period@{print\+Period}}
+\hypertarget{ledseven_8c_a00ac6a7c432bf0eca834d4bd9f456e37}{\index{ledseven.\+c@{ledseven.\+c}!print\+Period@{print\+Period}}
 \index{print\+Period@{print\+Period}!ledseven.\+c@{ledseven.\+c}}
 \subsubsection[{print\+Period}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Period (
 \begin{DoxyParamCaption}
-{}
+\item[{const {\bf Pin\+Out} $\ast$}]{pin\+Map}
 \end{DoxyParamCaption}
-)}}\label{ledseven_8c_a7ca3b7b054ccc8babce289b2e56f38fc}
-The {\ttfamily  print\+Period} function will display a period on the seven-\/ segment L\+E\+D.
+)}}\label{ledseven_8c_a00ac6a7c432bf0eca834d4bd9f456e37}
+The {\ttfamily  print\+Period} function will display a period on the seven-\/ segment L\+E\+D display.
 
 \begin{DoxySince}{Since}
 2014-\/12-\/25 
 \end{DoxySince}
 \begin{DoxyVersion}{Version}
-0.\+1.\+0 
+0.\+2.\+0
 \end{DoxyVersion}
 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pin\+Map} & A pointer to the Pin\+Out that maps the relationship between the pins of the Arduino and those of the seven-\/segment L\+E\+D display being used \\
+\hline
+\end{DoxyParams}
 
-Definition at line 148 of file ledseven.\+c.
+
+Definition at line 173 of file ledseven.\+c.
 

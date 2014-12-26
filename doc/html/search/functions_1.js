@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['printdec',['printDec',['../ledseven_8c.html#a9e91ffda97a3a0e4a44d32562df5e7c3',1,'printDec(uint i):&#160;ledseven.c'],['../ledseven_8h.html#a9e91ffda97a3a0e4a44d32562df5e7c3',1,'printDec(uint i):&#160;ledseven.c']]],
-  ['printhex',['printHex',['../ledseven_8c.html#af6a7d641c0d0230c02891695b79b0793',1,'printHex(uint i):&#160;ledseven.c'],['../ledseven_8h.html#af6a7d641c0d0230c02891695b79b0793',1,'printHex(uint i):&#160;ledseven.c']]],
-  ['printperiod',['printPeriod',['../ledseven_8c.html#a7ca3b7b054ccc8babce289b2e56f38fc',1,'printPeriod():&#160;ledseven.c'],['../ledseven_8h.html#a7ca3b7b054ccc8babce289b2e56f38fc',1,'printPeriod():&#160;ledseven.c']]]
+  ['printdec',['printDec',['../ledseven_8c.html#a3b9f68afcfd5f12fbdeec0368285e59b',1,'printDec(unsigned int i, const pinOut *pinMap):&#160;ledseven.c'],['../ledseven_8h.html#ad1f744b2deedb958050b0f025bd1df14',1,'printDec(unsigned int i, const PinOut *pinMap):&#160;ledseven.c']]],
+  ['printhex',['printHex',['../ledseven_8c.html#a45583e6d929fa21b9811f64dd6e84a7a',1,'printHex(unsigned int i, const PinOut *pinMap):&#160;ledseven.c'],['../ledseven_8h.html#a45583e6d929fa21b9811f64dd6e84a7a',1,'printHex(unsigned int i, const PinOut *pinMap):&#160;ledseven.c']]],
+  ['printperiod',['printPeriod',['../ledseven_8c.html#a00ac6a7c432bf0eca834d4bd9f456e37',1,'printPeriod(const PinOut *pinMap):&#160;ledseven.c'],['../ledseven_8h.html#a00ac6a7c432bf0eca834d4bd9f456e37',1,'printPeriod(const PinOut *pinMap):&#160;ledseven.c']]]
 ];

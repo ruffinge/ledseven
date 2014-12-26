@@ -1,19 +1,36 @@
 \contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}ledseven.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{8}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}clear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen}{8}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dec}{8}{subsubsection.4.1.2.2}
-\contentsline {subsubsection}{\numberline {4.1.2.3}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Hex}{8}{subsubsection.4.1.2.3}
-\contentsline {subsubsection}{\numberline {4.1.2.4}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Period}{8}{subsubsection.4.1.2.4}
-\contentsline {section}{\numberline {4.2}ledseven.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{9}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{9}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{10}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}clear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen}{10}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dec}{10}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.3}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Hex}{10}{subsubsection.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.2.4}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Period}{10}{subsubsection.4.2.2.4}
+\contentsline {chapter}{\numberline {3}Todo List}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Data Structure Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Data Structures}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}Data Structure Documentation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Out Struct Reference}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{11}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Field Documentation}{12}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A}{12}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B}{12}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C}{12}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D}{12}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P}{12}{subsubsection.6.1.2.5}
+\contentsline {subsubsection}{\numberline {6.1.2.6}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E}{13}{subsubsection.6.1.2.6}
+\contentsline {subsubsection}{\numberline {6.1.2.7}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F}{13}{subsubsection.6.1.2.7}
+\contentsline {subsubsection}{\numberline {6.1.2.8}led\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G}{13}{subsubsection.6.1.2.8}
+\contentsline {chapter}{\numberline {7}File Documentation}{15}{chapter.7}
+\contentsline {section}{\numberline {7.1}ledseven.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}c File Reference}{15}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{15}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Function Documentation}{16}{subsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.2.1}clear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen}{16}{subsubsection.7.1.2.1}
+\contentsline {subsubsection}{\numberline {7.1.2.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dec}{16}{subsubsection.7.1.2.2}
+\contentsline {subsubsection}{\numberline {7.1.2.3}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Hex}{17}{subsubsection.7.1.2.3}
+\contentsline {subsubsection}{\numberline {7.1.2.4}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Period}{17}{subsubsection.7.1.2.4}
+\contentsline {section}{\numberline {7.2}ledseven.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h File Reference}{18}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{18}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Typedef Documentation}{19}{subsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.1}Pin\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Out}{19}{subsubsection.7.2.2.1}
+\contentsline {subsection}{\numberline {7.2.3}Function Documentation}{19}{subsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.3.1}clear\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Screen}{19}{subsubsection.7.2.3.1}
+\contentsline {subsubsection}{\numberline {7.2.3.2}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dec}{19}{subsubsection.7.2.3.2}
+\contentsline {subsubsection}{\numberline {7.2.3.3}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Hex}{20}{subsubsection.7.2.3.3}
+\contentsline {subsubsection}{\numberline {7.2.3.4}print\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Period}{20}{subsubsection.7.2.3.4}
