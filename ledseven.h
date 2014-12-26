@@ -21,7 +21,7 @@
  * @param[in] i
  *     The digit to display (Must be between 0x0 and 0xF, inclusive)
  */
-void printHex(int i);
+void printHex(uint i);
 
 /**
  * The <code>printDec</code> function is designed to print a decimal digit to a
@@ -32,7 +32,7 @@ void printHex(int i);
  * @param[in] i
  *     The digit to display (must be between 0 and 9, inclusive)
  */
-void printDec(int i);
+void printDec(uint i);
 
 /**
  * The <code> printPeriod</code> function will display a period on the seven-

@@ -10,7 +10,7 @@
 
 #include "ledseven.h"
 
-void printHex(int i)
+void printHex(uint i)
 {
 	switch (i)
 	{
@@ -19,7 +19,7 @@ void printHex(int i)
 	}
 }
 
-void printDec(int i)
+void printDec(uint i)
 {
 	switch (i) {
 	case 0:
