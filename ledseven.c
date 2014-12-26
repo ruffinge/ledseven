@@ -124,7 +124,7 @@ void printDec(unsigned int i, const pinOut *pinMap)
 	case 7:
 		digitalWrite((*pinMap).ledPinA, HIGH);
 		digitalWrite((*pinMap).ledPinB, HIGH);
-		digitalWrite((*pinMap).ledPinC, HGIH);
+		digitalWrite((*pinMap).ledPinC, HIGH);
 		break;
 	case 8:
 		digitalWrite((*pinMap).ledPinA, HIGH);
