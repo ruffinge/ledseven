@@ -13,8 +13,8 @@
 #define LED_PIN_G 9
 
 /**
- * The printHex function is designed to print a hexadecimal digit to a seven-
- * segment LED.
+ * The <code>printHex</code> function is designed to print a hexadecimal digit
+ * to a seven-segment LED.
  *
  * @since 2014-12-25
  *
@@ -24,8 +24,8 @@
 void printHex(int i);
 
 /**
- * The printDec function is designed to print a decimal digit to a seven-segment
- * LED.
+ * The <code>printDec</code> function is designed to print a decimal digit to a
+ * seven-segment LED.
  *
  * @since 2014-12-25
  *
