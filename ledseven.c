@@ -12,10 +12,57 @@
 
 void printHex(uint i)
 {
-	switch (i)
-	{
-	case 0:
-	default:
+	if (0 <= i && i <= 9) {
+		printDec(i);
+	} else {
+		switch (i) {
+		case 0xA:
+			digitalWrite(LED_PIN_A, HIGH);
+			digitalWrite(LED_PIN_B, HIGH);
+			digitalWrite(LED_PIN_C, HIGH);
+			digitalWrite(LED_PIN_G, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_F, HIGH);
+			break;
+		case 0xB:
+			digitalWrite(LED_PIN_C, HIGH);
+			digitalWrite(LED_PIN_D, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_F, HIGH);
+			digitalWrite(LED_PIN_G, HIGH);
+			break;
+		case 0xC:
+			digitalWrite(LED_PIN_A, HIGH);
+			digitalWrite(LED_PIN_F, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			break;
+		case 0xD:
+			digitalWrite(LED_PIN_B, HIGH);
+			digitalWrite(LED_PIN_C, HIGH);
+			digitalWrite(LED_PIN_D, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_G, HIGH);
+			break;
+		case 0xE:
+			digitalWrite(LED_PIN_A, HIGH);
+			digitalWrite(LED_PIN_B, HIGH);
+			digitalWrite(LED_PIN_D, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_F, HIGH);
+			digitalWrite(LED_PIN_G, HIGH);
+			break;
+		case 0xF:
+			digitalWrite(LED_PIN_A, HIGH);
+			digitalWrite(LED_PIN_D, HIGH);
+			digitalWrite(LED_PIN_E, HIGH);
+			digitalWrite(LED_PIN_F, HIGH);
+			digitalWrite(LED_PIN_G, HIGH);
+			break;
+		default:
+			digitalWrite(LED_PIN_G, HIGH);
+			break;
+		}
 	}
 }
 
