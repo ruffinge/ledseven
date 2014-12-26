@@ -7,6 +7,8 @@
  * It contains all necessary declarations, preprocessor statements, and related
  * code.
  *
+ * @author Ethan Ruffing <ruffinge@gmail.com>
+ * @since 2014-12-25
  * @version 0.1.0
  */
 
