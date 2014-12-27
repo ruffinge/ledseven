@@ -1,5 +1,5 @@
-7-Segment LCD Library for Arduino UNO
-=====================================
+Arduino Library for 7-Segment LED Display
+=========================================
 
 Copyright
 ---------
