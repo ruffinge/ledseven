@@ -1,5 +1,8 @@
 CHANGELOG
 =========
+## 0.2.1 ##
+* Fixed license information location in ledseven.h header file
+
 ## 0.2.0 ##
 * Added adjustable pin mappings
 * Added struct `pinOut` for pin mappings and modified function arguments to

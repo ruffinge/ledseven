@@ -9,7 +9,23 @@
  *
  * @author Ethan Ruffing <ruffinge@gmail.com>
  * @since 2014-12-25
- * @version 0.2.0
+ * @version 0.2.1
+ *
+ * @license
+ * This file is part of ledseven.
+ * @par
+ * Ledseven is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * @par
+ * Ledseven is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ * @par
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with ledseven.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @todo Convert to C++ and make the library object-oriented
  */
@@ -32,7 +48,7 @@
  * the mapping, see the documentation for pinOut.
  *
  * @since 2014-12-26
- * @version 0.2.0
+ * @version 0.2.1
  */
 /**
  * @struct pinOut
@@ -49,25 +65,9 @@
  * digital pin 2, then `pinOut.ledPinA` should be assigned a value of `2`.
  *
  * @since 2014-12-26
- * @version 0.2.0
+ * @version 0.2.1
  *
  * @copyright Copyright 2014 by Ethan Ruffing <ruffinge@gmail.com>
- *
- * @license
- * This file is part of ledseven.
- * @par
- * Ledseven is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * @par
- * Ledseven is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- * @par
- * You should have received a copy of the GNU Lesser General Public License
- * along with ledseven.  If not, see <http://www.gnu.org/licenses/>.
  */
 typedef struct pinOut
 {
@@ -107,7 +107,7 @@ typedef struct pinOut
  * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
- * @version 0.2.0
+ * @version 0.2.1
  *
  * @param[in] i
  *     The digit to display (Must be between 0x0 and 0xF, inclusive)
@@ -128,7 +128,7 @@ void printHex(unsigned int i, const PinOut *pinMap);
  * accepted value, a dash (`-`) will be displayed instead.
  *
  * @since 2014-12-25
- * @version 0.2.0
+ * @version 0.2.1
  *
  * @param[in] i
  *     The digit to display (must be between 0 and 9, inclusive)
@@ -143,7 +143,7 @@ void printDec(unsigned int i, const PinOut *pinMap);
  * segment LED display.
  *
  * @since 2014-12-25
- * @version 0.2.0
+ * @version 0.2.1
  *
  * @param[in] pinMap
  *     A pointer to the PinOut that maps the relationship between the pins of
@@ -156,7 +156,7 @@ void printPeriod(const PinOut *pinMap);
  * LED display so that it can be written to again.
  *
  * @since 2014-12-25
- * @version 0.2.0
+ * @version 0.2.1
  *
  * @param[in] pinMap
  *     A pointer to the PinOut that maps the relationship between the pins of
