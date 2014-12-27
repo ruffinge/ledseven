@@ -1,5 +1,8 @@
 CHANGELOG
 =========
+## 0.2.2 ##
+* Fixed title in README.md
+
 ## 0.2.1 ##
 * Fixed license information location in ledseven.h header file
 
